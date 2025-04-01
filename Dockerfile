@@ -26,7 +26,7 @@ RUN npm ci --only=production && npm cache clean --force
 COPY . .
 
 # Configure persistent data volume
-VOLUME ["/app/data"]
+#VOLUME ["/app/data"]
 
 # Configure application port - aber der tatsächliche Port wird durch PAPERLESS_AI_PORT bestimmt
 EXPOSE ${PAPERLESS_AI_PORT:-3000}
